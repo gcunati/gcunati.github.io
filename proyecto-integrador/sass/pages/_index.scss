@@ -1,0 +1,15 @@
+.section-cards{
+    padding: 1em;
+
+    &__header{
+        margin-bottom: 1em;
+    }
+}
+
+
+.cards-container{
+    display: flex;
+    gap: 1em 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+}

@@ -1,0 +1,156 @@
+/* ---------------------------
+            HEADER
+--------------------------- */
+
+.main-header{
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+        &{
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+#menu{
+    display: none;
+
+    &:checked ~ .nav-bar{
+        display: block;    
+    }
+    
+    &:checked ~ .search-bar .menu-toggle__label{
+        background-color: #E63946;
+    }
+}
+
+/* ---------------------------
+            NAV-BAR
+--------------------------- */
+
+.nav-bar{
+    background-color: #457b9d;
+    
+    &__nav-list{
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+
+        @media (max-width: 768px) {
+            &{
+                flex-direction: column;
+            }
+        }    
+    }
+    
+    &__nav-link{
+        display: block;
+        padding: 1em 2em;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        background-color: #23416C;
+    }
+
+    @media (max-width: 768px) {
+  
+        &{
+            display: none;
+        }
+    }    
+}
+
+
+/* ---------------------------
+            SEARCH-BAR
+--------------------------- */
+
+.search-bar{
+    display: flex;
+    justify-content: space-between;
+    background-color: yellowgreen;
+    
+    &__logo-container,
+    &__form-container{
+        padding: 1em;
+    }
+    
+    &__logo-container{
+        background-color: #23416C;
+    }
+    
+    &__form-container{
+        background-color: #457B9D;
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+    }
+    
+    &__form-label{
+        background-color: #23416C;
+    }
+    
+    &__form-search{
+        background-color: #F1FAEE;
+        width: 70%;
+    }
+    
+    &__form-submit{
+        background-color: #23416C;
+    }
+    
+    &__carrito-container{
+        flex: 0 0 3em;
+        background-color: #23416C;
+    }
+}
+
+
+/* ---------------------------
+            MENU-TOGGLE
+--------------------------- */
+
+.menu-toggle{
+    display: none;
+    flex: 0 0 3em;
+    position: relative;
+    cursor: pointer;
+
+    &__label{
+        display: block;
+        background-color:#457B9D;
+        height: 100%;
+    }
+    
+    &__top-bread,
+    &__meat,
+    &__bottom-bread {
+        display: block;
+        height: .2em;
+        background-color: #23416C;
+        position: absolute;
+        left: .5em;
+        right: .5em;
+    }
+    
+    &__top-bread{
+        top: .8em;
+    }
+    
+    &__meat{
+        top: 50%;
+        margin-top: -.1em ;
+    }
+    
+    &__bottom-bread{
+        bottom: .8em;
+    }
+
+    @media (max-width: 768px) {
+    
+        &{
+            display: block;
+        }
+    }    
+}
