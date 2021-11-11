@@ -1,6 +1,5 @@
 .card{
     outline: none;
-    margin-bottom: 3%;
     flex-grow: 0;
     flex-shrink: 0;
     width: 325px;
@@ -14,7 +13,7 @@
     background: -webkit-linear-gradient(90deg, hsla(201, 20%, 23%, 1) 0%, hsla(133, 18%, 59%, 1) 100%);  
     filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr="#2F3E46", endColorstr="#84A98C", GradientType=1 )";
     box-shadow: 0 2px 5px rgba(0, 0, 0, .2), 1px 1px 5px rgba(0, 0, 0, .6);
-    border-radius: 5px 5px 0 0;
+    border-radius: 10px;
     transition: all .2s;
 
 
@@ -57,7 +56,7 @@
         text-align: center;
     }
 
-    @media (max-width: 713px){
+    @media (min-width: 500px) and (max-width: 713px){
         &__article{
             display: flex;
         }
@@ -70,6 +69,21 @@
         &{
             width: 80%;
             height: 300px;
+        }
+
+        &__content{
+            height: 300px;
+            padding: 2em;
+            text-align: center;
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            letter-spacing: -15px;
+        }
+    }
+
+    @media (max-width: 500px){
+        &{
+            width: 70%;
         }
     }
 }

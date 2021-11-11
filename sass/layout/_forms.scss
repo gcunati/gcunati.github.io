@@ -1,0 +1,228 @@
+/* ---------------------------
+    FORMULARIO DE ALTA.HTML
+--------------------------- */
+
+.section-form__form{
+    margin: 5% 0;
+    padding: 2rem 5rem;
+    background: hsla(165, 19%, 40%, 1);
+    background: linear-gradient(270deg, hsla(165, 19%, 40%, 1) 0%, hsla(164, 19%, 27%, 1) 100%);  
+    background: -moz-linear-gradient(270deg, hsla(165, 19%, 40%, 1) 0%, hsla(164, 19%, 27%, 1) 100%);  
+    background: -webkit-linear-gradient(270deg, hsla(165, 19%, 40%, 1) 0%, hsla(164, 19%, 27%, 1) 100%); 
+    filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr="#52796F", endColorstr="#38534C", GradientType=1 )";
+    border-radius: 5px;
+
+    @media (min-width: 1700px) {
+        width: 35%;
+    }
+
+    @media (max-width: 500px) {
+        padding: .5em;
+    }
+    
+
+    &__field{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1em;
+
+        & label{
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: white;
+            margin-bottom: .5em;
+        }
+
+        & input{
+            padding: .25em 0;
+            font-weight: bold;
+            color: #cad2c5;
+            border: none;
+            border-bottom: 1px solid rgb(255, 255, 255);
+            background-color: #52796f;
+            transition: all .2s ease-in;
+
+            &:hover,
+            &:focus{
+                background-color: #cad2c5;
+                color:#2f3e46;
+            }
+        }
+
+        & select{
+            padding: .25em 0;
+            font-family: 'Zen Kurenaido', sans-serif;
+            font-size: 1.1rem;
+            text-align: center;
+            font-weight: bold;
+            color: #cad2c5;
+            border: none;
+            border-bottom: 1px solid rgb(255, 255, 255);
+            background-color: #52796f;
+            transition: all .2s ease-in;
+
+            &:hover,
+            &:focus{
+                background-color: #cad2c5;
+                color:#2f3e46;
+            }
+        }
+
+        & textarea{
+            height: 5em;
+            resize: none;
+            border: none;
+            color: #cad2c5;
+            font-weight: bold;
+            border-bottom: 1px solid rgb(255, 255, 255);
+            background-color: #52796f;
+            font-family: 'Zen Kurenaido', sans-serif;
+            font-size: 1.1rem;
+
+            &:hover,
+            &:focus{
+                background-color: #cad2c5;
+                color:#2f3e46;
+            }
+
+        }
+
+        &__free-deliver{
+            margin: 0 auto;
+        }
+
+        &__submit{
+            display: flex;
+            flex-direction: column;
+            margin-top: 1em;
+
+            & input{
+                font-family: 'Zen Kurenaido', sans-serif;
+                font-size: 1.1rem;
+                width: 50%;
+                margin: .5em auto;
+                padding: 10px 0;
+                background-color: #cad2c5;
+                border: none;
+                border-bottom: 1px solid rgb(255, 255, 255);
+                border-radius: 5px;
+                cursor: pointer;
+                transition: all .1s ease-in;
+
+                &:hover{
+                    background-color: #2f3e46;
+                    color: #cad2c5;
+                }
+            }
+            
+        }
+    }
+}
+
+/* ---------------------------
+    FORMULARIO DE CONTACTO.HTML
+--------------------------- */
+
+.section-contact__container__form{
+    margin: 5% 0;
+    padding: 2rem 5rem;
+    background: hsla(165, 19%, 40%, 1);
+    background: linear-gradient(270deg, hsla(165, 19%, 40%, 1) 0%, hsla(164, 19%, 27%, 1) 100%);  
+    background: -moz-linear-gradient(270deg, hsla(165, 19%, 40%, 1) 0%, hsla(164, 19%, 27%, 1) 100%);  
+    background: -webkit-linear-gradient(270deg, hsla(165, 19%, 40%, 1) 0%, hsla(164, 19%, 27%, 1) 100%); 
+    filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr="#52796F", endColorstr="#38534C", GradientType=1 )";
+    border-radius: 5px;
+
+    @media (min-width: 1700px) {
+        width: 35%;
+    }
+
+    @media (max-width: 500px) {
+        padding: .5em;
+    }
+
+    &__title{
+        width: 322px;
+        text-align: center;
+        margin: 0 auto 1em;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: white;
+        text-shadow: 1px 2px 2px black;
+    }
+    
+    &__field{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1em;
+
+        & label{
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: white;
+            margin-bottom: .5em;
+        }
+
+        & input{
+            padding: .25em 0;
+            font-weight: bold;
+            color: #cad2c5;
+            border: none;
+            border-bottom: 1px solid rgb(255, 255, 255);
+            background-color: #52796f;
+            transition: all .2s ease-in;
+
+            &:hover,
+            &:focus{
+                background-color: #cad2c5;
+                color:#2f3e46;
+            }
+        }
+
+        & textarea{
+            height: 5em;
+            resize: none;
+            border: none;
+            color: #cad2c5;
+            font-weight: bold;
+            border-bottom: 1px solid rgb(255, 255, 255);
+            background-color: #52796f;
+            font-family: 'Zen Kurenaido', sans-serif;
+            font-size: 1.1rem;
+
+            &:hover,
+            &:focus{
+                background-color: #cad2c5;
+                color:#2f3e46;
+            }
+
+        }
+
+        &__submit{
+            display: flex;
+            flex-direction: column;
+            margin-top: 1em;
+
+            & input{
+                font-family: 'Zen Kurenaido', sans-serif;
+                font-size: 1.1rem;
+                width: 50%;
+                margin: .5em auto;
+                padding: 10px 0;
+                background-color: #cad2c5;
+                border: none;
+                border-bottom: 1px solid rgb(255, 255, 255);
+                border-radius: 5px;
+                cursor: pointer;
+                transition: all .1s ease-in;
+
+                &:hover{
+                    background-color: #2f3e46;
+                    color: #cad2c5;
+                }
+            }    
+        }
+    }
+}

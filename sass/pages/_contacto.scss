@@ -1,0 +1,104 @@
+.section-contact{
+    padding: 1em;
+
+    &__header{
+        color: #2f3e46;
+        margin: 3em 0 0;
+        text-align: center;
+        line-height: 2rem;
+    }
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        &__social-media{
+            display: grid;
+            align-items: center;
+            grid-template-rows: 20% 80%;
+            background: hsla(165, 19%, 40%, 1);
+            background: linear-gradient(270deg, hsla(165, 19%, 40%, 1) 0%, hsla(164, 19%, 27%, 1) 100%);  
+            background: -moz-linear-gradient(270deg, hsla(165, 19%, 40%, 1) 0%, hsla(164, 19%, 27%, 1) 100%);  
+            background: -webkit-linear-gradient(270deg, hsla(165, 19%, 40%, 1) 0%, hsla(164, 19%, 27%, 1) 100%); 
+            filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr="#52796F", endColorstr="#38534C", GradientType=1 )";
+            border-radius: 5px;
+            width: 482px;
+            height: 544px;
+            padding-bottom: 2em;
+            margin-bottom: 5%;
+
+            @media (min-width: 1700px) {
+                width: 35%;
+            }
+
+            @media (max-width: 500px) {
+                width: 338px;
+            }
+
+            &__title{
+                width: 322px;
+                text-align: center;
+                margin: 0 auto;
+                font-size: 1.5em;
+                font-weight: bold;
+                color: white;
+                text-shadow: 1px 2px 2px black;
+            }
+
+            &__links{
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr;
+                align-items: center;
+                height: 95%;
+                width: 40%;
+                margin: 0 auto;
+
+                & a{
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    padding: 2em 0;
+                    color: white;
+                    text-align: center;
+                    border-radius: 10px;
+                    margin: .5em 0;
+                    box-shadow: 1px 1px 5px #2f3e46;
+                    filter: saturate(0.5);
+                    transition: all .3s ease-in-out;
+                    
+                    &:hover{
+                        filter: saturate(1);
+                    }
+                }
+
+                &__facebook{
+                    background: hsla(217, 98%, 62%, 1);
+                    background: linear-gradient(180deg, hsla(217, 98%, 62%, 1) 0%, hsla(217, 46%, 37%, 1) 100%);
+                    background: -moz-linear-gradient(180deg, hsla(217, 98%, 62%, 1) 0%, hsla(217, 46%, 37%, 1) 100%);
+                    background: -webkit-linear-gradient(180deg, hsla(217, 98%, 62%, 1) 0%, hsla(217, 46%, 37%, 1) 100%);
+                    filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr="#4189FD", endColorstr="#33558B", GradientType=1 )";
+                }
+
+                &__twitter{
+                    background: hsla(217, 98%, 62%, 1);
+                    background: linear-gradient(90deg, hsla(217, 98%, 62%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+                    background: -moz-linear-gradient(90deg, hsla(217, 98%, 62%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+                    background: -webkit-linear-gradient(90deg, hsla(217, 98%, 62%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+                    filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr="#4189FD", endColorstr="#60EFFF", GradientType=1 )";
+                }
+
+                &__instagram{
+                    background: hsla(284, 100%, 53%, 1);
+                    background: linear-gradient(225deg, hsla(284, 100%, 53%, 1) 0%, hsla(333, 100%, 53%, 1) 50%, hsla(33, 94%, 57%, 1) 100%);
+                    background: -moz-linear-gradient(225deg, hsla(284, 100%, 53%, 1) 0%, hsla(333, 100%, 53%, 1) 50%, hsla(33, 94%, 57%, 1) 100%);
+                    background: -webkit-linear-gradient(225deg, hsla(284, 100%, 53%, 1) 0%, hsla(333, 100%, 53%, 1) 50%, hsla(33, 94%, 57%, 1) 100%);
+                    filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr="#BF0FFF", endColorstr="#FF0F7B", GradientType=1 )";
+                }
+                
+              
+            }
+        }
+    }
+}

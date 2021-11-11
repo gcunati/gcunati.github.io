@@ -1,0 +1,91 @@
+.section-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3em 0;
+
+    &__history-container{
+        width: 70%;
+        text-align: center;
+        font-size: 1.25em;
+        padding: 2em;
+        margin: 3em 0;
+        color: #2f3e46;
+        background: hsla(133, 18%, 59%, 1);
+        background: radial-gradient(circle, hsla(133, 18%, 59%, 1) 0%, hsla(97, 13%, 80%, 1) 100%);       
+        background: -moz-radial-gradient(circle, hsla(133, 18%, 59%, 1) 0%, hsla(97, 13%, 80%, 1) 100%);      
+        background: -webkit-radial-gradient(circle, hsla(133, 18%, 59%, 1) 0%, hsla(97, 13%, 80%, 1) 100%);      
+        filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr="#84A98C", endColorstr="#CAD2C5", GradientType=1 )";
+        
+        & h1{
+            margin-bottom: .5em;
+        }
+    }
+
+    &__members-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        text-align: center;
+        font-size: 1.25em;
+        padding: 2em;
+        color: #2f3e46;
+        background: hsla(133, 18%, 59%, 1);
+        background: radial-gradient(circle, hsla(133, 18%, 59%, 1) 0%, hsla(97, 13%, 80%, 1) 100%);       
+        background: -moz-radial-gradient(circle, hsla(133, 18%, 59%, 1) 0%, hsla(97, 13%, 80%, 1) 100%);      
+        background: -webkit-radial-gradient(circle, hsla(133, 18%, 59%, 1) 0%, hsla(97, 13%, 80%, 1) 100%);      
+        filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr="#84A98C", endColorstr="#CAD2C5", GradientType=1 )";
+
+        & h1{
+            margin-bottom: .5em;
+        }
+
+        &__title{
+            margin-bottom: 3em;
+        }
+
+        &__content{
+            width: 90%;
+            display: flex;
+
+            @media (max-width: 1060px) {
+                flex-direction: column;        
+            }
+
+            &__member{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                @media (max-width: 1060px) {
+                    margin-bottom: 1em;        
+                }
+                
+                & img{
+                    width: 50%;
+                    border-radius: 10px;
+                    box-shadow: 1px 1px 5px #2f3e46;
+                    filter: saturate(0.25);
+                    transition: all .3s ease-in-out;
+                    
+                    &:hover{
+                        filter: saturate(1);
+                    }
+
+                    @media (max-width: 1060px) {
+                        width: 25%;        
+                    }
+        
+                }
+
+                & span{
+                    margin-top: .25em;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
