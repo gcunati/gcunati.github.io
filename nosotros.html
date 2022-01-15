@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
+    <div id="particles-js"></div>
+
     <header class="main-header">
         
         <input type="checkbox" id="menu">
@@ -35,16 +38,23 @@
                 <div class="search-bar__logo-container__slogan-us">
                 </div>
             </div>
+            <div class="menu-toggle">
+                <label class="menu-toggle__label" for="menu">
+                    <span class="menu-toggle__top-bread"></span>
+                    <span class="menu-toggle__meat"></span>
+                    <span class="menu-toggle__bottom-bread"></span>
+                </label>
+            </div>
         </div>
-        <div class="search-bar__logo-container__history">
-            <h1>¿Quienes Somos?</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quod culpa excepturi fugiat ex facere repellendus quaerat autem, facilis, odit distinctio enim veritatis assumenda incidunt harum dolore itaque eos voluptatum, iure qui?</p>
-        </div>
-
+        
     </header>
-
+    
     <main>
         <div class="section-us">
+            <div class="section-us__history">
+                <h1>¿Quienes Somos?</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quod culpa excepturi fugiat ex facere repellendus quaerat autem, facilis, odit distinctio enim veritatis assumenda incidunt harum dolore itaque eos voluptatum, iure qui?</p>
+            </div>
             <div class="section-us__history-container">
                 <article>
                     <h1>Un poco de nuestra historia</h1>
@@ -93,5 +103,7 @@
         </div>
     </footer>
 
+    <script src="js/particles.js"></script>
+    <script src="js/particles-app.js"></script>
 </body>
 </html>

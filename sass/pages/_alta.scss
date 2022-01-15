@@ -6,10 +6,23 @@
 
 
     &__header{
-        color: #2f3e46;
+        font-size: 1.25em;
+        color: #cad2c5;
+        text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.521);
         font-variant: small-caps;
         margin: 3em 0 0;
         text-align: center;
         line-height: 2rem;
+        letter-spacing: .5em;
+
+        @media (max-width: 1024px){
+            font-size: 1em;
+            letter-spacing: .25em;
+        }
+
+        @media (max-width: 768px){
+            font-size: .85em;
+            letter-spacing: .25em;
+        }
     }
 }

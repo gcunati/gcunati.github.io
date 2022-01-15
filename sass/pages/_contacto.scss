@@ -2,10 +2,24 @@
     padding: 1em;
 
     &__header{
-        color: #2f3e46;
+        font-size: 1.25em;
+        font-variant: small-caps;
+        color: #cad2c5;
+        text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.521);
         margin: 3em 0 0;
         text-align: center;
         line-height: 2rem;
+        letter-spacing: .3em;
+
+        @media (max-width: 1024px){
+            font-size: 1em;
+            letter-spacing: .2em;
+        }
+
+        @media (max-width: 768px){
+            font-size: .85em;
+            letter-spacing: .1em;
+        }
     }
 
     &__container{
@@ -23,6 +37,7 @@
             background: -moz-linear-gradient(270deg, hsla(165, 19%, 40%, 1) 0%, hsla(164, 19%, 27%, 1) 100%);  
             background: -webkit-linear-gradient(270deg, hsla(165, 19%, 40%, 1) 0%, hsla(164, 19%, 27%, 1) 100%); 
             filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr="#52796F", endColorstr="#38534C", GradientType=1 )";
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.507);
             border-radius: 5px;
             width: 482px;
             height: 544px;

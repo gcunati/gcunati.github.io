@@ -1,15 +1,28 @@
 .section-cards{
     padding: 1em;
+    position: relative;
 
     &__header{
-        color: #2f3e46;
+        color: #cad2c5;
+        font-size: 1.25em;
         font-variant: small-caps;
+        text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.521);
         margin: 3em 0 0;
         text-align: center;
         line-height: 2rem;
+        letter-spacing: .5em;
+
+        @media (max-width: 1024px){
+            font-size: 1em;
+            letter-spacing: .25em;
+        }
+
+        @media (max-width: 768px){
+            font-size: .85em;
+            letter-spacing: .25em;
+        }
     }
 }
-
 
 .cards-container{
     display: flex;

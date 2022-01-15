@@ -8,5 +8,15 @@
 
 body{
     box-sizing: border-box;
-    background-color: #cad2c5;
+    background: hsla(201, 20%, 23%, 1);
+    background: linear-gradient(90deg, hsla(201, 20%, 23%, 1) 0%, hsla(174, 18%, 33%, 1) 23%, hsla(165, 19%, 40%, 1) 100%); 
+    background: -moz-linear-gradient(90deg, hsla(201, 20%, 23%, 1) 0%, hsla(174, 18%, 33%, 1) 23%, hsla(165, 19%, 40%, 1) 100%);   
+    background: -webkit-linear-gradient(90deg, hsla(201, 20%, 23%, 1) 0%, hsla(174, 18%, 33%, 1) 23%, hsla(165, 19%, 40%, 1) 100%);  
+    filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr="#2F3E46", endColorstr="#44625F", GradientType=1 )";
+}
+
+#particles-js{
+    position: fixed;
+    z-index: -1;
+    height: 100%;
 }
