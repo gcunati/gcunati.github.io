@@ -339,6 +339,7 @@ body {
   align-items: center;
 }
 .search-bar__form-label {
+  display: none;
   padding-right: 1rem;
   color: white;
   font-size: 1.5rem;
@@ -356,26 +357,47 @@ body {
   }
 }
 .search-bar__form-search {
+  font-weight: bolder;
+  font-family: "Zen Kurenaido", sans-serif;
+  font-size: 1.1em;
+  padding-left: 0.25em;
+  color: black;
+  text-shadow: 1px 1px 2px white;
   height: 50%;
-  border-radius: 5px;
   border: none;
-  padding: 1em;
-  background-color: #cad2c5;
+  background-color: #52796f;
   width: 100%;
   max-width: 500px;
+  border-bottom: 2px solid #cad2c5;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  transition: all 0.25s ease-in-out;
+}
+.search-bar__form-search:focus {
+  background: #537970;
+  background: linear-gradient(135deg, #537970 0%, #cad3c5 100%);
+  background: -webkit-linear-gradient(135deg, #537970 0%, #cad3c5 100%);
+  filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr=" #52796F ", endColorstr=" #CAD2C5 ", GradientType=1 )";
+}
+.search-bar__form-search:hover {
+  background: linear-gradient(135deg, #537970 0%, #cad3c5 100%);
+  background: -webkit-linear-gradient(135deg, #537970 0%, #cad3c5 100%);
+  filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr=" #52796F ", endColorstr=" #CAD2C5 ", GradientType=1 )";
+  border-bottom: none;
 }
 .search-bar__form-submit {
-  font-family: "Zen Kurenaido", sans-serif;
-  font-weight: bold;
-  font-size: 1.5rem;
-  color: #354f52;
-  height: 50%;
-  padding: 0 0.5em;
-  margin: 0 0.5em;
-  line-height: 1em;
-  border-radius: 5px;
+  margin-left: 1%;
+  height: 60%;
+  width: auto;
   border: none;
-  background-color: #cad2c5;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50%;
+  transition: all 0.15s ease-in-out;
+}
+.search-bar__form-submit:hover {
+  transform: scale(1.05);
+  background-color: #39534d;
 }
 .search-bar__carrito-container {
   font-variant: small-caps;
