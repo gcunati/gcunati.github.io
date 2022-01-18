@@ -289,6 +289,7 @@
             background: -moz-linear-gradient(135deg, hsla(165, 19%, 40%, 1) 0%, hsla(97, 13%, 80%, 1) 100%);      
             background: -webkit-linear-gradient(135deg, hsla(165, 19%, 40%, 1) 0%, hsla(97, 13%, 80%, 1) 100%);      
             filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr="#52796F", endColorstr="#CAD2C5", GradientType=1 )";
+            outline: none;
         }
 
         &:hover{
@@ -302,7 +303,7 @@
     
     &__form-submit{
         margin-left: 1%;
-        height: 60%;
+        height: 70%;
         width: auto;
         border: none;
         object-fit: contain;
@@ -311,7 +312,7 @@
 
         &:hover{
             transform: scale(1.05);
-            background-color: #39534d;
+            background-color: #72948c;
         }
     }
     
