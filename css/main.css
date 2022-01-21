@@ -571,6 +571,7 @@ body {
   border-bottom: 1px solid white;
   background-color: #52796f;
   transition: all 0.2s ease-in;
+  outline: none;
 }
 .section-form__form__field input:hover, .section-form__form__field input:focus {
   background-color: #cad2c5;
@@ -586,6 +587,7 @@ body {
   border: none;
   border-bottom: 1px solid white;
   background-color: #52796f;
+  outline: none;
   transition: all 0.2s ease-in;
 }
 .section-form__form__field select:hover, .section-form__form__field select:focus {
@@ -602,6 +604,7 @@ body {
   background-color: #52796f;
   font-family: "Zen Kurenaido", sans-serif;
   font-size: 1.1rem;
+  outline: none;
 }
 .section-form__form__field textarea:hover, .section-form__form__field textarea:focus {
   background-color: #cad2c5;
@@ -615,7 +618,7 @@ body {
   flex-direction: column;
   margin-top: 1em;
 }
-.section-form__form__field__submit input {
+.section-form__form__field__submit button {
   font-family: "Zen Kurenaido", sans-serif;
   font-size: 1.1rem;
   width: 50%;
@@ -628,9 +631,25 @@ body {
   cursor: pointer;
   transition: all 0.1s ease-in;
 }
-.section-form__form__field__submit input:hover {
+.section-form__form__field__submit button:hover {
   background-color: #2f3e46;
   color: #cad2c5;
+}
+.section-form__form__field--error label {
+  color: #f94144;
+  text-shadow: 0 1px 1px #000000;
+}
+.section-form__form__field--error input {
+  border: 1px solid salmon;
+}
+.section-form__form__field--error textarea {
+  border: 1px solid salmon;
+}
+.section-form__form__field--error .error-detail {
+  display: block;
+  color: white;
+  text-align: center;
+  background-color: #2f3e46;
 }
 
 /* ---------------------------
