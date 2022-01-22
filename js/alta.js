@@ -43,11 +43,11 @@ const setCustomValidity = function (mensaje, index) {
 
 input[0].addEventListener('keyup', () => {
     let inputName = input[0].value.trim()
-    let nameRegExp = /^[A-Z][a-z]{3,10}$/
+    let nameRegExp = /^([A-Z][a-z]{3,10}|([A-Z][a-z]{3,10} ([A-Z][0-9]{1,3}|[A-Z][a-z]{2,10})))$/
     if (nameRegExp.test(inputName)){
         mensaje = ''
     } else {
-        mensaje = 'El nombre debe iniciar en mayúsculas'
+        mensaje = 'Nombre inválido'
     }
     index = 0
     setCustomValidity (mensaje, index)
