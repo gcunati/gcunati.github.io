@@ -168,6 +168,9 @@ body {
 .nav-bar__nav-link:hover {
   background-color: #52796f;
 }
+.nav-bar__nav-link-active {
+  background-color: #52796f;
+}
 @media (max-width: 768px) {
   .nav-bar__nav-link {
     width: 100%;
@@ -313,7 +316,7 @@ body {
   filter: saturate(0.5);
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .search-bar__logo-container__slogan-us p {
   display: none;
@@ -420,7 +423,7 @@ body {
 }
 .search-bar__carrito-container:hover {
   cursor: pointer;
-  box-shadow: 2px 2px 5px #436064;
+  box-shadow: 1px 2px 5px #436064;
 }
 @media (max-width: 1200px) {
   .search-bar__carrito-container {

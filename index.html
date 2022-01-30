@@ -18,16 +18,16 @@
         <nav class="nav-bar">
             <ul class="nav-bar__nav-list">
                 <li class="nav-bar__nav-item">
-                    <a class="nav-bar__nav-link" href="index.html">Inicio</a>
+                    <a class="nav-bar__nav-link" id="inicio" href="">Inicio</a>
                 </li>
                 <li class="nav-bar__nav-item">
-                    <a class="nav-bar__nav-link" href="alta.html">Alta</a>
+                    <a class="nav-bar__nav-link" id="alta" href="">Alta</a>
                 </li>
                 <li class="nav-bar__nav-item">
-                    <a class="nav-bar__nav-link" href="contacto.html">Contacto</a>
+                    <a class="nav-bar__nav-link" id="contacto" href="">Contacto</a>
                 </li>
                 <li class="nav-bar__nav-item">
-                    <a class="nav-bar__nav-link" href="nosotros.html">Nosotros</a>
+                    <a class="nav-bar__nav-link" id="nosotros" href="">Nosotros</a>
                 </li>
             </ul>
         </nav>
@@ -36,7 +36,7 @@
             <div class="search-bar__logo-container">
                 <img class="search-bar__logo-container__image" src="css/img/Portada.jpg" alt="Logo Connecticus" width="100%">
                 <div class="search-bar__logo-container__slogan">
-                    <p>Renová tu celular al mejor precio</p>
+                    <p class="change-parentClass">Renová tu celular al mejor precio</p>
                 </div>
                 <div class="menu-toggle">
                     <label class="menu-toggle__label" for="menu">
@@ -58,18 +58,10 @@
                 </div>
             </div>  
         </div>
+
     </header>
 
     <main>
-
-        <section class="section-cards">
-            <header class="section-cards__header">
-                <h1>Descubrí los flagships de cada marca</h1>
-            </header>
-
-            <div class="cards-container"></div>        
-             
-        </section>
 
     </main>
 
@@ -87,9 +79,18 @@
         </div>
     </footer>
 
+
+    <!-- Scripts de Plantillas -->
     <script src="js/card.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/inicio.js"></script>
+    <script src="js/alta.js"></script>
+
+
+    <!-- Scripts de Partículas -->
     <script src="js/particles.js"></script>
     <script src="js/particles-app.js"></script>
+
+    <!-- Script de Arranque -->
+    <script src="js/main.js"></script>
 </body>
 </html>

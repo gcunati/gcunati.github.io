@@ -80,6 +80,9 @@
             background-color: #52796f;
         }
 
+        &-active{
+            background-color: #52796f;
+        }
         
         @media (max-width: 768px) {
             
@@ -213,7 +216,7 @@
             filter: saturate(.5);
             background-size: cover;
             background-repeat: no-repeat;
-            border-radius: 10px;
+            border-radius: 5px;
             
             & p{
                 display: none;
@@ -336,7 +339,7 @@
         
         &:hover{
             cursor: pointer;
-            box-shadow: 2px 2px 5px #436064;
+            box-shadow: 1px 2px 5px #436064;
         }
         
         @media (max-width: 1200px){
