@@ -2,147 +2,279 @@
     FORMULARIO DE ALTA.HTML
 --------------------------- */
 
-.section-form__form{
-    margin: 5% 0;
-    padding: 2rem 5rem;
-    background: hsla(165, 19%, 40%, 1);
-    background: linear-gradient(270deg, hsla(165, 19%, 40%, 1) 0%, hsla(164, 19%, 27%, 1) 100%);  
-    background: -moz-linear-gradient(270deg, hsla(165, 19%, 40%, 1) 0%, hsla(164, 19%, 27%, 1) 100%);  
-    background: -webkit-linear-gradient(270deg, hsla(165, 19%, 40%, 1) 0%, hsla(164, 19%, 27%, 1) 100%); 
-    filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr="#52796F", endColorstr="#38534C", GradientType=1 )";
-    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.507);
-    border-radius: 5px;
+.section-form{
 
-    @media (min-width: 1700px) {
-        width: 35%;
-    }
-
-    @media (max-width: 500px) {
-        padding: .5em;
-    }
+    &__form{
+        width: 50%;
+        margin: 5% 0;
+        padding: 2rem 5rem;
+        background: hsla(165, 19%, 40%, 1);
+        background: linear-gradient(270deg, hsla(165, 19%, 40%, 1) 0%, hsla(164, 19%, 27%, 1) 100%);  
+        background: -moz-linear-gradient(270deg, hsla(165, 19%, 40%, 1) 0%, hsla(164, 19%, 27%, 1) 100%);  
+        background: -webkit-linear-gradient(270deg, hsla(165, 19%, 40%, 1) 0%, hsla(164, 19%, 27%, 1) 100%); 
+        filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr="#52796F", endColorstr="#38534C", GradientType=1 )";
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.507);
+        border-radius: 5px;
     
-
-    &__field{
-        display: flex;
-        flex-direction: column;
-        margin-top: 1em;
-
-        & label{
-            text-align: center;
-            font-size: 1.2em;
-            font-weight: bold;
-            color: white;
-            margin-bottom: .5em;
+        @media (min-width: 1700px) {
+            width: 40%;
+            max-width: 1000px;
         }
 
-        & input{
-            padding: .25em 0;
-            font-weight: bold;
-            color: #cad2c5;
-            border: none;
-            border-bottom: 1px solid rgb(255, 255, 255);
-            background-color: #52796f;
-            transition: all .2s ease-in;
-            outline: none;
-
-            &:hover,
-            &:focus{
-                background-color: #cad2c5;
-                color:#2f3e46;
-            }
+        @media (max-width: 1200px) {
+            width: 80%;
+            max-width: 800px;
         }
-
-        & select{
-            padding: .25em 0;
-            font-family: 'Zen Kurenaido', sans-serif;
-            font-size: 1.1rem;
-            text-align: center;
-            font-weight: bold;
-            color: #cad2c5;
-            border: none;
-            border-bottom: 1px solid rgb(255, 255, 255);
-            background-color: #52796f;
-            outline: none;
-            transition: all .2s ease-in;
-
-            &:hover,
-            &:focus{
-                background-color: #cad2c5;
-                color:#2f3e46;
-            }
+    
+        @media (max-width: 500px) {
+            padding: .5em;
         }
-
-        & textarea{
-            height: 5em;
-            resize: none;
-            border: none;
-            color: #cad2c5;
-            font-weight: bold;
-            border-bottom: 1px solid rgb(255, 255, 255);
-            background-color: #52796f;
-            font-family: 'Zen Kurenaido', sans-serif;
-            font-size: 1.1rem;
-            outline: none;
-
-            &:hover,
-            &:focus{
-                background-color: #cad2c5;
-                color:#2f3e46;
-            }
-
-        }
-
-        &__free-deliver{
-            margin: 0 auto;
-        }
-
-        &__submit{
+        
+    
+        &__field{
             display: flex;
             flex-direction: column;
             margin-top: 1em;
-
-            & button{
-                font-family: 'Zen Kurenaido', sans-serif;
-                font-size: 1.1rem;
-                width: 50%;
-                margin: .5em auto;
-                padding: 10px 0;
-                background-color: #cad2c5;
+        
+            & label{
+                text-align: center;
+                font-size: 1.2em;
+                font-weight: bold;
+                color: white;
+                margin-bottom: .5em;
+            }
+        
+            & input{
+                padding: .25em 0;
+                font-weight: bold;
+                color: #cad2c5;
                 border: none;
                 border-bottom: 1px solid rgb(255, 255, 255);
-                border-radius: 5px;
-                cursor: pointer;
-                transition: all .1s ease-in;
-
-                &:hover{
-                    background-color: #2f3e46;
-                    color: #cad2c5;
+                background-color: #52796f;
+                transition: all .2s ease-in;
+                outline: none;
+            
+                &:hover,
+                &:focus{
+                    background-color: #cad2c5;
+                    color:#2f3e46;
                 }
             }
-            
-        }
-
-        &--error {
-            & label{
-                color: #f94144;
-                text-shadow: 0 1px 1px #000000;
-            }
-
-            & input{
-                border: 1px solid salmon;
-            }
-
-            & textarea{
-                border: 1px solid salmon;
-            }
-
-            & .error-detail{
-                display: block;
-                color: rgb(255, 255, 255);
+        
+            & select{
+                padding: .25em 0;
+                font-family: 'Zen Kurenaido', sans-serif;
+                font-size: 1.1rem;
                 text-align: center;
-                background-color: #2f3e46;
+                font-weight: bold;
+                color: #cad2c5;
+                border: none;
+                border-bottom: 1px solid rgb(255, 255, 255);
+                background-color: #52796f;
+                outline: none;
+                transition: all .2s ease-in;
+            
+                &:hover,
+                &:focus{
+                    background-color: #cad2c5;
+                    color:#2f3e46;
+                }
+            }
+        
+            & textarea{
+                height: 5em;
+                resize: none;
+                border: none;
+                color: #cad2c5;
+                font-weight: bold;
+                border-bottom: 1px solid rgb(255, 255, 255);
+                background-color: #52796f;
+                font-family: 'Zen Kurenaido', sans-serif;
+                font-size: 1.1rem;
+                outline: none;
+            
+                &:hover,
+                &:focus{
+                    background-color: #cad2c5;
+                    color:#2f3e46;
+                }
+            
+            }
+        
+            &__free-deliver{
+                margin: 0 auto;
+            }
+        
+            &__submit{
+                display: flex;
+                flex-direction: column;
+                margin-top: 1em;
+            
+                & button{
+                    font-family: 'Zen Kurenaido', sans-serif;
+                    font-size: 1.1rem;
+                    width: 50%;
+                    max-width: 150px;
+                    margin: .5em auto;
+                    padding: 10px 0;
+                    background-color: #cad2c5;
+                    border: none;
+                    border-bottom: 1px solid rgb(255, 255, 255);
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: all .1s ease-in;
+                
+                    &:hover{
+                        background-color: #2f3e46;
+                        color: #cad2c5;
+                    }
+                
+                    &:disabled{
+                        background-color: #cad2c5;
+                        color: #686868;
+                        border: 1px solid salmon;
+                    }
+                }
+                
+            }
+        
+            &--error {
+                & label{
+                    color: #f94144;
+                    text-shadow: 0 1px 1px #000000;
+                }
+            
+                & input{
+                    border: 1px solid salmon;
+                }
+            
+                & textarea{
+                    border: 1px solid salmon;
+                }
+            
+                & .error-detail{
+                    display: block;
+                    color: rgb(255, 255, 255);
+                    text-align: center;
+                    background-color: #2f3e46;
+                }
             }
         }
+    }
+
+    &__loaded{
+        width: 50%;
+        margin: 0 0 5%;
+        padding: 2rem;
+        background: hsla(165, 19%, 40%, 1);
+        background: linear-gradient(270deg, hsla(165, 19%, 40%, 1) 0%, hsla(164, 19%, 27%, 1) 100%);  
+        background: -moz-linear-gradient(270deg, hsla(165, 19%, 40%, 1) 0%, hsla(164, 19%, 27%, 1) 100%);  
+        background: -webkit-linear-gradient(270deg, hsla(165, 19%, 40%, 1) 0%, hsla(164, 19%, 27%, 1) 100%); 
+        filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr="#52796F", endColorstr="#38534C", GradientType=1 )";
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.507);
+        border-radius: 5px;
+    
+        @media (min-width: 1700px) {
+            width: 40%;
+            max-width: 1000px;
+        }
+    
+        @media (max-width: 1200px) {
+            width: 80%;
+            max-width: 800px;
+        }
+
+        @media (max-width: 500px) {
+            padding: .5em;
+        }
+        
+        & h2{
+            text-align: center;
+            font-variant: small-caps;
+            letter-spacing: 3px;
+            color: #cad2c5;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #cad2c5;
+        }
+
+        &__products{
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #cad2c5;
+            text-align: center;
+
+            &__table{
+                width: 100%;
+                padding: 5px;
+                color: #cad2c5;
+                border: 1px solid #2f3e46;
+                border-collapse: collapse;
+
+                & tbody{
+                    @media (max-width: 950px) {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        border: none;
+                    }
+                }
+                
+                & tr, th, td{
+                    border: 1px solid #2f3e46;
+                    text-align: center; 
+                    padding: 5px;
+
+                    @media (max-width: 950px) {
+                        border: none;
+                    }
+                }
+
+                & .first-column{
+                    @media (max-width: 950px) {
+                        display: flex;
+                        flex-direction: column;
+                        border-bottom: 1px solid #2f3e46;
+                    }
+                }
+                
+                & .second-column { 
+                    @media (max-width: 950px) {      
+                        display: flex;
+                        flex-direction: column;
+                        grid-column-start: 2;
+                        border-bottom: 1px solid #2f3e46;
+                    }
+                }
+
+                & td:not(td:last-child){
+                    border-bottom: 1px dashed #cad2c5;
+                }
+
+                & button{
+                    font-family: 'Zen Kurenaido', sans-serif;
+                    font-size: 1.1rem;
+                    width: 90%;
+                    margin: .5em 0;
+                    padding: 10px 0;
+                    background-color: #cad2c5;
+                    border: none;
+                    border-bottom: 1px solid rgb(255, 255, 255);
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: all .1s ease-in;
+                
+                    &:hover{
+                        background-color: #2f3e46;
+                        color: #cad2c5;
+                    }
+
+                    @media (max-width: 950px) {
+                        max-width: 150px;
+                    }
+                }
+            }
+        }
+
     }
 }
 
@@ -162,7 +294,7 @@
     border-radius: 5px;
 
     @media (min-width: 1700px) {
-        width: 35%;
+        width: 40%;
     }
 
     @media (max-width: 500px) {
@@ -236,6 +368,7 @@
                 font-family: 'Zen Kurenaido', sans-serif;
                 font-size: 1.1rem;
                 width: 50%;
+                max-width: 150px;
                 margin: .5em auto;
                 padding: 10px 0;
                 background-color: #cad2c5;

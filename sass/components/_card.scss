@@ -38,10 +38,10 @@
     }
 
     &__image-container{
-        height: 80%;
+        height: 85%;
         overflow: hidden;
-        -webkit-clip-path: polygon(0 0,0 75%, 50% 90%, 100% 75%, 100% 0);
-        clip-path: polygon(0 0,0 75%, 50% 90%, 100% 75%, 100% 0);
+        -webkit-clip-path: polygon(0 0,0 100%, 100% 100%, 100% 0);
+        clip-path: polygon(0 0,0 100%, 100% 100%, 100% 0);
     }
 
     &__image{
@@ -61,6 +61,7 @@
         height: 20%;
         width: 100%;
         text-align: center;
+        text-shadow: 2px 2px #232f35;
     }
 
     &__heading{

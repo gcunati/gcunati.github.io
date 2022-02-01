@@ -57,10 +57,10 @@ body {
   height: 100%;
 }
 .card__image-container {
-  height: 80%;
+  height: 85%;
   overflow: hidden;
-  -webkit-clip-path: polygon(0 0, 0 75%, 50% 90%, 100% 75%, 100% 0);
-  clip-path: polygon(0 0, 0 75%, 50% 90%, 100% 75%, 100% 0);
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
 }
 .card__image {
   height: 100%;
@@ -78,6 +78,7 @@ body {
   height: 20%;
   width: 100%;
   text-align: center;
+  text-shadow: 2px 2px #232f35;
 }
 .card__heading {
   height: 100%;
@@ -535,6 +536,7 @@ body {
     FORMULARIO DE ALTA.HTML
 --------------------------- */
 .section-form__form {
+  width: 50%;
   margin: 5% 0;
   padding: 2rem 5rem;
   background: #537970;
@@ -546,7 +548,14 @@ body {
 }
 @media (min-width: 1700px) {
   .section-form__form {
-    width: 35%;
+    width: 40%;
+    max-width: 1000px;
+  }
+}
+@media (max-width: 1200px) {
+  .section-form__form {
+    width: 80%;
+    max-width: 800px;
   }
 }
 @media (max-width: 500px) {
@@ -625,6 +634,7 @@ body {
   font-family: "Zen Kurenaido", sans-serif;
   font-size: 1.1rem;
   width: 50%;
+  max-width: 150px;
   margin: 0.5em auto;
   padding: 10px 0;
   background-color: #cad2c5;
@@ -637,6 +647,11 @@ body {
 .section-form__form__field__submit button:hover {
   background-color: #2f3e46;
   color: #cad2c5;
+}
+.section-form__form__field__submit button:disabled {
+  background-color: #cad2c5;
+  color: #686868;
+  border: 1px solid salmon;
 }
 .section-form__form__field--error label {
   color: #f94144;
@@ -654,6 +669,113 @@ body {
   text-align: center;
   background-color: #2f3e46;
 }
+.section-form__loaded {
+  width: 50%;
+  margin: 0 0 5%;
+  padding: 2rem;
+  background: #537970;
+  background: linear-gradient(270deg, #537970 0%, #38524b 100%);
+  background: -webkit-linear-gradient(270deg, #537970 0%, #38524b 100%);
+  filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr=" #52796F ", endColorstr=" #38534C ", GradientType=1 )";
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.507);
+  border-radius: 5px;
+}
+@media (min-width: 1700px) {
+  .section-form__loaded {
+    width: 40%;
+    max-width: 1000px;
+  }
+}
+@media (max-width: 1200px) {
+  .section-form__loaded {
+    width: 80%;
+    max-width: 800px;
+  }
+}
+@media (max-width: 500px) {
+  .section-form__loaded {
+    padding: 0.5em;
+  }
+}
+.section-form__loaded h2 {
+  text-align: center;
+  font-variant: small-caps;
+  letter-spacing: 3px;
+  color: #cad2c5;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #cad2c5;
+}
+.section-form__loaded__products {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #cad2c5;
+  text-align: center;
+}
+.section-form__loaded__products__table {
+  width: 100%;
+  padding: 5px;
+  color: #cad2c5;
+  border: 1px solid #2f3e46;
+  border-collapse: collapse;
+}
+@media (max-width: 950px) {
+  .section-form__loaded__products__table tbody {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: none;
+  }
+}
+.section-form__loaded__products__table tr, .section-form__loaded__products__table th, .section-form__loaded__products__table td {
+  border: 1px solid #2f3e46;
+  text-align: center;
+  padding: 5px;
+}
+@media (max-width: 950px) {
+  .section-form__loaded__products__table tr, .section-form__loaded__products__table th, .section-form__loaded__products__table td {
+    border: none;
+  }
+}
+@media (max-width: 950px) {
+  .section-form__loaded__products__table .first-column {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #2f3e46;
+  }
+}
+@media (max-width: 950px) {
+  .section-form__loaded__products__table .second-column {
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 2;
+    border-bottom: 1px solid #2f3e46;
+  }
+}
+.section-form__loaded__products__table td:not(td:last-child) {
+  border-bottom: 1px dashed #cad2c5;
+}
+.section-form__loaded__products__table button {
+  font-family: "Zen Kurenaido", sans-serif;
+  font-size: 1.1rem;
+  width: 90%;
+  margin: 0.5em 0;
+  padding: 10px 0;
+  background-color: #cad2c5;
+  border: none;
+  border-bottom: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+.section-form__loaded__products__table button:hover {
+  background-color: #2f3e46;
+  color: #cad2c5;
+}
+@media (max-width: 950px) {
+  .section-form__loaded__products__table button {
+    max-width: 150px;
+  }
+}
 
 /* ---------------------------
     FORMULARIO DE CONTACTO.HTML
@@ -670,7 +792,7 @@ body {
 }
 @media (min-width: 1700px) {
   .section-contact__container__form {
-    width: 35%;
+    width: 40%;
   }
 }
 @media (max-width: 500px) {
@@ -736,6 +858,7 @@ body {
   font-family: "Zen Kurenaido", sans-serif;
   font-size: 1.1rem;
   width: 50%;
+  max-width: 150px;
   margin: 0.5em auto;
   padding: 10px 0;
   background-color: #cad2c5;
@@ -862,7 +985,7 @@ body {
 }
 @media (min-width: 1700px) {
   .section-contact__container__social-media {
-    width: 35%;
+    width: 40%;
   }
 }
 @media (max-width: 500px) {
@@ -884,7 +1007,7 @@ body {
   grid-template-rows: 1fr 1fr 1fr;
   align-items: center;
   height: 95%;
-  width: 40%;
+  width: 35%;
   margin: 0 auto;
 }
 .section-contact__container__social-media__links a {
