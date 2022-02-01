@@ -94,7 +94,7 @@ async function initAlta(){
     button = document.querySelector('button')
 
     // Carga en el modelo de productos los que traiga el controlador. Después los imprime en vista
-    productsModel.products = await productsController.getProducts()
+    productsModel.initproducts(await productsController.getProducts())
     renderProds(productsModel.get())
 
     button.disabled = true
@@ -113,7 +113,7 @@ async function initAlta(){
     
     input[0].addEventListener('keyup', () => {
         let inputName = input[0].value.trim()
-        let nameRegExp = /^([A-Z][a-z]{3,10}|([A-Z][a-z]{3,10} ([A-Z][0-9]{1,3}|[A-Z][a-z]{2,10})))$/
+        let nameRegExp = /^([A-Z][a-z]{3,10}|([A-Z][a-z]{3,10} ([A-Z][0-9]{1,3}|[A-Z][a-z]{1,10}|[1-9][0-9]{1,2})))$/
         index = 0
         if (nameRegExp.test(inputName)){
             mensaje = ''

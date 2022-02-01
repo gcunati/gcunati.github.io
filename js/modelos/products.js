@@ -7,6 +7,11 @@
 class ProductsModel {
     products = []
 
+    // Función que evita llamar directamente a los datos. Por seguridad se usa esta función cargándolos como argumentos
+    initproducts(products){
+        this.products = products
+    }
+
     get() {
         return this.products
     }

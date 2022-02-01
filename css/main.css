@@ -42,6 +42,7 @@ body {
   border-radius: 5px;
   transition: all 0.2s;
   margin: 1em 2em 2em;
+  cursor: pointer;
 }
 .card:focus, .card:hover {
   background: #2f3e46;
@@ -424,7 +425,13 @@ body {
 }
 .search-bar__carrito-container:hover {
   cursor: pointer;
-  box-shadow: 1px 2px 5px #436064;
+}
+.search-bar__carrito-container:hover > p {
+  text-shadow: 2px 1px 3px #171e22;
+}
+.search-bar__carrito-container:hover > img {
+  -webkit-animation: carrito 0.25s infinite linear;
+          animation: carrito 0.25s infinite linear;
 }
 @media (max-width: 1200px) {
   .search-bar__carrito-container {
@@ -454,10 +461,40 @@ body {
 .search-bar__carrito-container img {
   height: 50px;
   margin: 0;
-  transition: all 0.1s ease-in-out;
 }
-.search-bar__carrito-container img:hover {
-  transform: rotate(-15deg);
+@-webkit-keyframes carrito {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes carrito {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 @media (max-width: 400px) {
   .search-bar__carrito-container img {
@@ -536,7 +573,7 @@ body {
     FORMULARIO DE ALTA.HTML
 --------------------------- */
 .section-form__form {
-  width: 50%;
+  width: 45%;
   margin: 5% 0;
   padding: 2rem 5rem;
   background: #537970;
@@ -548,11 +585,10 @@ body {
 }
 @media (min-width: 1700px) {
   .section-form__form {
-    width: 40%;
     max-width: 1000px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
   .section-form__form {
     width: 80%;
     max-width: 800px;
@@ -670,7 +706,7 @@ body {
   background-color: #2f3e46;
 }
 .section-form__loaded {
-  width: 50%;
+  width: 45%;
   margin: 0 0 5%;
   padding: 2rem;
   background: #537970;
@@ -682,11 +718,10 @@ body {
 }
 @media (min-width: 1700px) {
   .section-form__loaded {
-    width: 40%;
     max-width: 1000px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
   .section-form__loaded {
     width: 80%;
     max-width: 800px;

@@ -5,7 +5,7 @@
 .section-form{
 
     &__form{
-        width: 50%;
+        width: 45%;
         margin: 5% 0;
         padding: 2rem 5rem;
         background: hsla(165, 19%, 40%, 1);
@@ -17,11 +17,10 @@
         border-radius: 5px;
     
         @media (min-width: 1700px) {
-            width: 40%;
             max-width: 1000px;
         }
 
-        @media (max-width: 1200px) {
+        @media (max-width: 1600px) {
             width: 80%;
             max-width: 800px;
         }
@@ -163,7 +162,7 @@
     }
 
     &__loaded{
-        width: 50%;
+        width: 45%;
         margin: 0 0 5%;
         padding: 2rem;
         background: hsla(165, 19%, 40%, 1);
@@ -175,11 +174,10 @@
         border-radius: 5px;
     
         @media (min-width: 1700px) {
-            width: 40%;
             max-width: 1000px;
         }
     
-        @media (max-width: 1200px) {
+        @media (max-width: 1600px) {
             width: 80%;
             max-width: 800px;
         }
