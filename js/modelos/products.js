@@ -12,8 +12,14 @@ class ProductsModel {
         this.products = products
     }
 
-    get() {
-        return this.products
+    get(id) {
+        if(id) {
+            let product = this.products.find(product => product.id == id)
+            return product
+        } 
+        else {
+            return this.products
+        }
     }
 
     post(product) {

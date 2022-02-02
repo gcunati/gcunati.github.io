@@ -21,6 +21,22 @@
             font-size: .85em;
             letter-spacing: .25em;
         }
+
+        & h5{
+            color: #2f3e46;
+            text-shadow: none;
+            width: 600px;
+            margin: 20px auto;
+            background: hsla(133, 18%, 59%, 1);
+            background: radial-gradient(circle, hsla(133, 18%, 59%, 1) 0%, hsla(97, 13%, 80%, .5) 100%);       
+            background: -moz-radial-gradient(circle, hsla(133, 18%, 59%, 1) 0%, hsla(97, 13%, 80%, .5) 100%);      
+            background: -webkit-radial-gradient(circle, hsla(133, 18%, 59%, 1) 0%, hsla(97, 13%, 80%, .5) 100%);      
+            filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr="#84A98C", endColorstr="#CAD2C5", GradientType=1 )";
+
+            @media (max-width: 1024px){
+                width: 60%;
+            }
+        }
     }
 }
 
@@ -30,4 +46,10 @@
     margin: 5% 0;
     flex-wrap: wrap;
     justify-content: center;
+
+    & h2:not(.card__heading){
+        color: #cad2c5;
+        letter-spacing: 3px;
+        text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.521); 
+    }
 }

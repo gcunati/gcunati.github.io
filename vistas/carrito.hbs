@@ -1,0 +1,40 @@
+{{#if cart.length}}
+    <button onclick="cartController.sendCart()" class="cart-section__order">Hacer Pedido</button>
+    <table>
+        <tr class="first-column">
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Marca</th>
+            <th>Foto</th>
+            <th>Cantidad</th>
+            <th>Envío</th>
+            <th>Acción</th>
+        </tr>
+
+        {{#each cart}}
+        <tr class="second-column">
+            <td>{{name}}</td>
+            <td>{{price}}</td>
+            <td>{{brand}}</td>
+            <td>
+                <img src="{{photo}}" width="50" alt="{{nombre}}">
+            </td>
+            <td>{{quant}}</td>
+            {{#if freeDelivery}}
+                <td>Si</td>
+            {{else}}
+                <td>No</td>
+            {{/if}}
+            <td>
+                <button onclick="cartController.deleteFromCart({{id}})">X</button>
+            </td>
+
+        </tr>
+        {{/each}}
+        
+    </table>
+
+{{else}}
+    <h2>El carrito está vacío</h2>
+    <hr>
+{{/if}}

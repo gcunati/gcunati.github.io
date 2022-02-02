@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,14 +9,15 @@
     <link rel="shortcut icon" href="css/img/connecticus-icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
 
     <div id="particles-js"></div>
 
     <header class="main-header">
-        
+
         <input type="checkbox" id="menu">
-        
+
         <nav class="nav-bar">
             <ul class="nav-bar__nav-list">
                 <li class="nav-bar__nav-item">
@@ -35,7 +37,8 @@
 
         <div class="search-bar">
             <div class="search-bar__logo-container">
-                <img class="search-bar__logo-container__image" src="css/img/Portada.jpg" alt="Logo Connecticus" width="100%">
+                <img class="search-bar__logo-container__image" src="css/img/Portada.jpg" alt="Logo Connecticus"
+                    width="100%">
                 <div class="search-bar__logo-container__slogan">
                     <p class="change-parentClass">Renová tu celular al mejor precio</p>
                 </div>
@@ -57,14 +60,20 @@
                     <img src="css/img/shopping.png" alt="Compras">
                     <p>Carrito</p>
                 </div>
-            </div>  
+            </div>
         </div>
 
     </header>
 
-    <main>
+    <!-- Zona de menú modal del carrito -->
+    <div class="cart-container">
+        <a href="#" class="cart-section__close">X</a>
+        <div class="cart-section">
+        </div>
+    </div>
 
-    </main>
+    <!-- Zona de inyección de plantillas SPA -->
+    <main></main>
 
 
     <footer>
@@ -82,25 +91,29 @@
 
 
     <!-- Script de Librería Handlebars -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <!-- Script de Modelos -->
-    <script src="js/modelos/products.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
+        integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Script de Clientes -->
     <script src="js/cliente/http.js"></script>
 
     <!-- Script de Servicios -->
     <script src="js/servicios/products.js"></script>
+    <script src="js/servicios/cart.js"></script>
+
+    <!-- Script de Modelos -->
+    <script src="js/modelos/products.js"></script>
+    <script src="js/modelos/cart.js"></script>
 
     <!-- Script de Controladores -->
     <script src="js/controladores/products.js"></script>
+    <script src="js/controladores/cart.js"></script>
 
     <!-- Scripts de Plantillas -->
-    <script src="js/menu/card.js"></script>
     <script src="js/menu/inicio.js"></script>
     <script src="js/menu/alta.js"></script>
-
+    <script src="js/menu/carrito.js"></script>
 
     <!-- Scripts de Partículas -->
     <script src="js/particles.js"></script>
@@ -109,4 +122,5 @@
     <!-- Script de Arranque -->
     <script src="js/menu/main.js"></script>
 </body>
+
 </html>
