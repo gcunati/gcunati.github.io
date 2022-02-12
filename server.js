@@ -1,5 +1,6 @@
 import express from 'express'
 import routerProductos from './router/productos.js'
+import routerCarrito from './router/carrito.js'
 
 import config from './config.js'
 
@@ -17,6 +18,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
 app.use('/api/productos', routerProductos)
+app.use('/api/carrito', routerCarrito)
 
 //------------------ LISTEN DEL SERVIDOR ------------------
 

@@ -6,7 +6,7 @@
 
 class CartService {
     
-    url_cart = 'https://61f8b4ba783c1d0017c4472c.mockapi.io/carrito/'
+    url_cart = '/api/carrito/'
 
     // ******************** POST ********************
 

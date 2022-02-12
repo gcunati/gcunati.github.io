@@ -11,11 +11,11 @@ router.get('/:id?', controller.getProducts)
 
 router.post('/', controller.postProduct)
 
-// --------------------- RUTAS POST ---------------------
+// --------------------- RUTAS PUT ---------------------
 
 router.put('/:id', controller.putProduct)
 
-// --------------------- RUTAS POST ---------------------
+// --------------------- RUTAS DELETE ---------------------
 
 router.delete('/:id', controller.deleteProduct)
 

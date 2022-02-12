@@ -1,6 +1,6 @@
 {{#if products.length}}
     {{#each products}}
-    <div class="card" onclick="addToCart({{id}})">
+    <div class="card" onclick="addToCart('{{id}}')">
         <article class="card__article">
             <div class="card__image-container">
                 <img src="{{photo}}" class="card__image" alt="{{name}}">

@@ -1,3 +1,7 @@
+// *****************************************************************//
+//           DEFINE EL PUERTO Y LA BASE DE DATOS A USAR             //
+// *****************************************************************//
+
 export default {
     PORT: 8080,
     // STR_CNX: 'mongodb://localhost/ecommerce', // <==  MONGODB LOCAL
