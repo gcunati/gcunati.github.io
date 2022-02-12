@@ -30,21 +30,26 @@ function marcarPlantilla(id) {
 // Llamado a ejecutar scripts de la plantilla inyectada
 
 function initJs(id) {
-
-    switch(id) {
-        case 'inicio':
-            initInicio()
-            break
-        case 'alta':
-            initAlta()
-            break
-        case 'contacto':
-            break
-        case 'nosotros':
-            break
-        default:
-            initInicio()
+    if(window.location.href == "https://gcunati.github.io/"){
+        location.href = "https://connecticus-ecommerce.glitch.me/#inicio"
     }
+    else{
+        switch(id) {
+            case 'inicio':
+                initInicio()
+                break
+            case 'alta':
+                initAlta()
+                break
+            case 'contacto':
+                break
+            case 'nosotros':
+                break
+            default:
+                initInicio()
+        }
+    }
+
 }
 
 
